@@ -1,0 +1,239 @@
+:root {
+    --blue-info: rgb(24, 88, 124);
+    --pink-dark: #f08467;
+    --pink-light: #e6b5a9;
+    --black: rgb(22, 22, 22);
+}
+
+.bg-info {
+    background-color: var(--blue-info) !important;
+}
+
+.bg-dark {
+    background-color: var(--black) !important;
+}
+
+.py-8 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.py-44 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.px-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.pr {
+    padding-right: 4rem;
+}
+
+.pl {
+    padding-left: 4rem;
+}
+
+.my-8 {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.my-44 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.my-6 {
+    margin-left: 4rem;
+    padding-right: 4rem;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .55;
+    overflow: hidden;
+}
+
+.hero-content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    margin-top: 6rem;
+    margin-left: 5rem;
+    padding-left: 2rem;
+    max-width: 70%;
+    border-left: .5rem solid black;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+.form-message {
+    height: 10rem;
+}
+
+.services__title {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.services__paragraph {
+    font-size: 1rem;
+    color: #fff !important;
+}
+
+.services__columns {
+    position: relative;
+}
+
+.services__icons {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+}
+
+.service__icons--padding {
+    padding: 3rem;
+}
+
+.service__icon {
+    padding-right: 20px;
+}
+
+.shadow-light {
+    box-shadow: 5px 8px 15px rgba(255,255,255, 0.3)
+}
+
+.about-text {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.about__title {
+    font-size: 4rem;
+    line-height: 1.4
+}
+
+.about__paragraph {
+    font-size: 1.2rem;
+}
+
+.about__button {
+    width: 150px;
+    align-self: flex-end;
+}
+
+.testimonial__card {
+    min-height: 15rem;
+    max-width: 75%;
+    min-width: 30px;
+}
+
+.testimonial__card--large {
+    min-height: 20rem;
+}
+
+.testimonial__icons {
+    font-size: 2.4rem;
+}
+
+.testimonial__icons i:not(:last-child) {
+    margin-right: 1.2rem;
+}
+
+.testimonial__paragraph {
+    font-size: 1.4rem;
+}
+
+.testimonial__author {
+    font-size: .9rem;
+}
+
+.contact__title {
+    font-size: 3rem;
+}
+
+.contact__paragraph {
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .services__icons {
+        position: relative;
+        top: 0;
+        left: 0;
+    }   
+
+    .pr {
+        padding-right: 1rem;
+    }
+
+    .pl {
+        padding-left: 1rem;
+    }
+
+    .about__title {
+        font-size: 2rem;
+        line-height: 1.4
+    }
+
+    .about-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .testimonial__card {
+        min-height: 15rem;
+        max-width: 100%;
+        min-width: 30px;
+    }
+
+    .about__img {
+        margin-bottom: 3rem;
+    }
+
+    .py-8 {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    .service__icons--padding {
+        padding: 1rem;
+    }
+}
+
+
