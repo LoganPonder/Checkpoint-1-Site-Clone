@@ -1,5 +1,6 @@
 :root {
     --black: rgb(22, 22, 22);
+    --white: rgb(240, 240, 240) !important;
 }
 
 html {
@@ -8,6 +9,10 @@ html {
 
 .bg-dark {
     background-color: var(--black) !important;
+}
+
+.bg-white {
+    background-color: var(--white) !important;
 }
 
 .py-8 {
@@ -64,10 +69,15 @@ body {
     flex-direction: column;
     padding: 0;
     overflow-x: hidden;
+    background-color: var(--white);
 }
 
 main {
     flex-grow: 1;
+}
+
+header {
+    background-color: rgba(22, 22, 22, 0.95);
 }
 
 .hero-video {
@@ -112,8 +122,9 @@ main {
 }
 
 .services__paragraph {
-    font-size: 1rem;
     color: #fff !important;
+    font-size: 1rem;
+    line-height:1.2;
 }
 
 .services__columns {
@@ -122,8 +133,10 @@ main {
 
 .services__icons {
     position: absolute;
-    top: 60%;
-    left: 15%;
+    top: 50%;
+    left: 10%;
+    font-size: 1.1rem;
+    text-transform: uppercase;
     border-left: 1rem solid rgb(44, 44, 49);
     color: var(--black);
 }
@@ -137,7 +150,7 @@ main {
 }
 
 .shadow-light {
-    box-shadow: 5px 8px 15px rgba(255,255,255, 0.3)
+    box-shadow: 5px 5px 15px rgba(255,255,255, 0.3)
 }
 
 .about-text {
@@ -164,6 +177,7 @@ main {
     max-width: 75%;
     min-width: 30px;
     color: var(--black);
+    border-top: .5rem solid black;
 }
 
 .testimonial__card--large {
@@ -195,6 +209,11 @@ main {
     color: rgb(85, 85, 85);
 }
 
+.testimonial__author > span {
+    font-family: 'Covered By Your Grace',
+    cursive;
+}
+
 .contact__title {
     font-size: 3rem;
 }
@@ -203,16 +222,34 @@ main {
     font-size: 1.6rem;
 }
 
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(60%) brightness(120%);
+}
+
+footer {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
 @media only screen and (max-width: 700px) {
+
+    .text-over-heading {
+        display: none;
+    }
+
     .services__icons {
         position: relative;
         top: 0;
         left: 0;
         border: none;
+        font-size: 1rem;
     }   
 
     .services__text {
-        margin-bottom: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .pr {
@@ -260,8 +297,12 @@ main {
     .service__icons--padding {
         padding: 1rem;
     }
-}
 
+    .gallery__img {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
 
 @keyframes wave {
     0% {
