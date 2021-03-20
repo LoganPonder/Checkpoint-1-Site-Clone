@@ -12,9 +12,28 @@
 <body>
     <!--HEADER -->
     <header>  
-        <nav class="navbar navbar-light bg-dark top-sticky">
-            <a class="navbar-brand text-light" href="#!">MANLY | SURF</a>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-dark">
+  <a class="navbar-brand text-white" href="#">SYD | SURF</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#about">About</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#culture">Culture</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#testimonials">Testimonials</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+        <!-- <nav class="navbar navbar-light bg-dark top-sticky">
+            <a class="navbar-brand text-light" href="#!">SYD | SURF</a>
+        </nav> -->
     </header>
 
     <!-- MAIN -->
@@ -29,9 +48,9 @@
                     </video>
                 </div>
             <div class="col-md-4 pl pr">
-                <h4 class="p-2">Subtitle</h4> 
+                <h4 class="p-2">SURF CLUB</h4> 
              <form class="bg-white p-4">
-                 <h5>Less Subtitle Heading</h5>
+                 <h5>Plan Your Session</h5>
                  <div class="form-row mb-3">
                      <div class="col">
                         <input type="text" class="form-control" placeholder="NAME"> 
@@ -56,75 +75,75 @@
                      </div>
                 </div>
                 <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <input type="checkbox" class="custom-control-input shadow" id="customCheck1">
                     <label class="custom-control-label" for="customCheck1">I have read the terms and conditions</label>
                 </div>
-                <button class="btn btn-dark">Submit</button>
+                <button class="btn btn-dark rounded">Submit</button>
             </form>
             
             </div>
 
             <div class="d-none d-md-block col-md-8 pr">
                 <div class="hero-text">
-                    <h1 class="display-2">MANLY SURF</h1>
-                    <p class="lead subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ut adipisci nesciunt voluptatibus ullam, voluptas cum accusantium suscipit amet porro!</p>
+                    <h1 class="display-2">SYDNEY SURF</h1>
+                    <p class="lead subtitle">There's no better way to learn how to surf than with the guidance of a true Aussie. Experience Australia the way the locals do, and carve through Sydney's infamous surf scene.</p>
                 </div>
             </div>
         </div>
         
         <!-- SERVICES -->
-        <div class="row py-6 justify-content-center bg-dark">
-            <div class="col-md-5 d-flex justify-content-center align-items-center py-44 pl">
+        <div class="row py-8 justify-content-center bg-dark" id="about">
+            <div class="col-md-5 d-flex justify-content-center align-items-center pl">
                 <div class="services__text px-4">
-                    <h3 class="services__title mb-3">SERVICES TITLE Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, ducimus?</h3>
-                    <small class="services__paragraph text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure distinctio iusto, fuga incidunt, quis excepturi, dolorem deleniti dolorum nulla id architecto? Nam sapiente quod non praesentium temporibus, sequi labore eum!</small>
+                    <h3 class="services__title mb-3">Syndey, Australia's ELITE Surf Club. The only place to experience SYD like a true Aussie.</h3>
+                    <small class="services__paragraph text-dark">We are a family of passionate surfers dedicated to teaching beginners and intermediates how to surf faster than they could ever imagine. From our experience, surfing becomes more fun the more you progress.</small>
                 </div>
             </div>
             <div class="col-md-7 d-flex justify-content-center py-md-5 services__columns pr bg-dark">
                 <div class="services__icons service__icons--padding bg-white shadow">
-                    <p class="service__text d-flex align-items-center"><i class="fas fa-adjust service__icon fa-2x"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, perspiciatis.</p>
-                    <p class="service__text d-flex align-items-center"><i class="fas fa-adjust service__icon fa-2x"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, perspiciatis.</p>
-                    <p class="service__text d-flex align-items-center"><i class="fas fa-adjust service__icon fa-2x"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, perspiciatis.</p>
-                    <p class="service__text d-flex align-items-center"><i class="fas fa-adjust service__icon fa-2x"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, perspiciatis.</p>
-                    <p class="service__text d-flex align-items-center"><i class="fas fa-adjust service__icon fa-2x"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, perspiciatis.</p>
+                    <p class="service__text d-flex align-items-center"><i class="fas fa-swimmer service__icon fa-2x"></i>Certified Instructors all registered within SYD</p>
+                    <p class="service__text d-flex align-items-center"><i class="fas fa-sun fa-2x service__icon"></i>Beautiful Australian weather and beaches, year-round</p>
+                    <p class="service__text d-flex align-items-center"><i class="fas fa-water service__icon fa-2x"></i>Local knowledge of the best surf spots</p>
+                    <p class="service__text d-flex align-items-center"><i class="fas fa-wind service__icon fa-2x"></i>Plan your trip around the swells of the PEAK season</p>
+                    <p class="service__text d-flex align-items-center"><i class="fas fa-bolt service__icon fa-2x"></i>Energized and knowledgable staff to keep you motivated</p>
                 </div>
             </div>
         </div>
 
         <!-- ABOUT -->
-        <div class="row justify-content-center py-44">
-            <div class="col-md-3 d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="./img/surfer.jpg" alt="" class="about__img">
+        <div class="row justify-content-center py-8" id="culture">
+            <div class="col-md-3 d-flex justify-content-center align-items-center img-column">
+                <img class="img-fluid shadow" src="./img/surfer.jpg" alt="" class="about__img">
             </div>
             <div class="col-md-9 d-flex flex-column justify-content-center align-items-center pr pl">
                 <div class="about__text d-flex flex-column">
-                    <h3 class="about__title"><i class="fas fa-adjust"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                    <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto a nemo deleniti doloremque quasi odit assumenda reiciendis minus! Minus illo enim suscipit quia. Quibusdam quisquam numquam ipsum exercitationem? Temporibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, inventore. Explicabo nulla vitae reiciendis aperiam?</p>
-                    <button class="about__button btn btn-primary">Read More</button>
+                    <h3 class="about__title"><i class="fas fa-adjust"></i>More than a sport, surf culture is a once in a lifetime experience.</h3>
+                    <p class="about__paragraph">Surfing was brought to Australia in 1915 by Hawaiian Duke Kahanamoku. He demonstrated this ancient Hawaiian board riding technique at Freshwater (or Harbord) in Sydney, New South Wales. Kahanamoku's board is now on display in the northeast end of the SYD Surf club, Sydney, Australia.</p>
+                    <button class="about__button btn btn-primary rounded">Read More</button>
                 </div>
             </div>
         </div>
 
         <!-- TESTIMONIALS -->
-        <div class="row py-8 align-items-center bg-dark">
+        <div class="row py-8 align-items-center bg-dark"  id="testimonials">
             <div class="col-md-4 text-center d-flex align-items-center justify-content-center order-2 order-md-1">
-                <div class="testimonial__card bg-light p-4 mb-5 shadow-light">
-                    <p class="testimonial__paragraph"><i class="fas fa-quote-left mr-2"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequatur porro tempore blanditiis id ab animi magni? Ea, optio omni</p>
-                    <small class="testimonial__author">JANE SMITH | NYC</small>
+                <div class="testimonial__card bg-light p-3 shadow-light d-flex flex-column justify-content-center rounded">
+                    <p class="testimonial__paragraph"><i class="fas fa-quote-left mr-2"></i>The highlight of my trip was meeting SYD and learning to surf Bondi.</p>
+                    <small class="testimonial__author">FADI ZAYA | LA</small>
                 </div>
             </div>
             <div class="col-md-4 text-center d-flex align-items-center justify-content-center order-0 order-md-2">
-                <div class="testimonial__card testimonial__card--large p-4 bg-light mb-5 shadow-light">
-                    <div class="testimonial__icons"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                    <p class="testimonial__paragraph"><i class="fas fa-quote-left mr-2"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequatur porro tempore blanditiis id ab animi magni? Ea, optomnis.</p>
-                    <small class="testimonial__author">JANE SMITH | NYC</small>
+                <div class="testimonial__card testimonial__card--large p-3 bg-light shadow-light d-flex flex-column justify-content-center rounded">
+                    <div class="testimonial__icons mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial__paragraph"><i class="fas fa-quote-left mr-2"></i>SYD Surf Club paired my friends and I with an excellent, fun instructor on our trip!</p>
+                    <small class="testimonial__author">ALINA LAMI | VIENNA</small>
                 </div>
             </div>
 
             <div class="col-md-4 text-center d-flex align-items-center justify-content-center order-md-3">
-                <div class="testimonial__card p-4 bg-light mb-5 shadow-light">
-                    <p class="testimonial__paragraph"><i class="fas fa-quote-left mr-2"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequatur porro tempore blanditiis id ab animi magni? Ea, optomnis.</p>
-                    <small class="testimonial__author">JANE SMITH | NYC</small>
+                <div class="testimonial__card p-3 bg-light shadow-light d-flex flex-column justify-content-center rounded">
+                    <p class="testimonial__paragraph"><i class="fas fa-quote-left mr-2"></i>Hands down, the best instructors in NSW! Thanks SYD team!</p>
+                    <small class="testimonial__author">DAVID AARON | NYC</small>
                 </div>
             </div>
             </div>
@@ -133,17 +152,19 @@
         <!-- CONTACT -->
         <div class="row">
             <div class="col py-6 pl pr">
-                <h4 class="contact__title">Want to Hear More?</h4>
-                <p class="contact__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam cum enim quis, error similique excepturi!</p>
+                <h4 class="contact__title">Ready to catch your wave?</h4>
+                <p class="contact__paragraph">Drop by our shop off Bondi Beach and turn your holiday into one to remember. Surf's Up!</p>
             </div>
         </div>
 
     </main>
 
     <!-- FOOTER -->
-    <footer class="container-fluid">
-        <div class="row justify-content-center align-items-center py-3">
-            <p class="footer_paragraph">Company &copy; 2021 All Rights Reserved</p>
+    <footer class="container-fluid bg-dark">
+        <div class="row py-3">
+            <div class="col px-2 text-center pt-2">
+            <p class="footer_paragraph">SYD SURF CLUB | Company &copy; 2021 All Rights Reserved | +43 234.234.2354</p>
+            </div>
         </div>
     </footer>
 </body>

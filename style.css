@@ -1,12 +1,9 @@
 :root {
-    --blue-info: rgb(24, 88, 124);
-    --pink-dark: #f08467;
-    --pink-light: #e6b5a9;
     --black: rgb(22, 22, 22);
 }
 
-.bg-info {
-    background-color: var(--blue-info) !important;
+html {
+    scroll-behavior: smooth !important;
 }
 
 .bg-dark {
@@ -24,8 +21,8 @@
 }
 
 .py-44 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .px-6 {
@@ -91,11 +88,14 @@ main {
 }
 
 .hero-text {
+    color: var(--black);
     margin-top: 6rem;
     margin-left: 5rem;
     padding-left: 2rem;
-    max-width: 70%;
+    max-width: 75%;
     border-left: .5rem solid black;
+    animation: wave 3s ease 1s backwards;
+    backface-visibility: none;
 }
 
 .subtitle {
@@ -124,6 +124,8 @@ main {
     position: absolute;
     top: 60%;
     left: 15%;
+    border-left: 1rem solid rgb(44, 44, 49);
+    color: var(--black);
 }
 
 .service__icons--padding {
@@ -150,10 +152,10 @@ main {
 
 .about__paragraph {
     font-size: 1.2rem;
+    line-height: 1.7;
 }
 
 .about__button {
-    width: 150px;
     align-self: flex-end;
 }
 
@@ -161,6 +163,7 @@ main {
     min-height: 15rem;
     max-width: 75%;
     min-width: 30px;
+    color: var(--black);
 }
 
 .testimonial__card--large {
@@ -176,11 +179,20 @@ main {
 }
 
 .testimonial__paragraph {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: thin;
+}
+
+.testimonial__image {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
 }
 
 .testimonial__author {
     font-size: .9rem;
+    color: rgb(85, 85, 85);
 }
 
 .contact__title {
@@ -196,7 +208,12 @@ main {
         position: relative;
         top: 0;
         left: 0;
+        border: none;
     }   
+
+    .services__text {
+        margin-bottom: 3rem;
+    }
 
     .pr {
         padding-right: 1rem;
@@ -217,18 +234,27 @@ main {
     }
 
     .testimonial__card {
-        min-height: 15rem;
+        min-height: 12rem;
         max-width: 100%;
         min-width: 30px;
     }
 
+    .testimonial__card {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
     .about__img {
-        margin-bottom: 3rem;
+        margin-bottom: 3rem !important;
+    }
+
+    .img-column {
+        margin-bottom: 2.5rem;
     }
 
     .py-8 {
-        padding-top: .5rem;
-        padding-bottom: .5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .service__icons--padding {
@@ -237,3 +263,18 @@ main {
 }
 
 
+@keyframes wave {
+    0% {
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+
+    70% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
