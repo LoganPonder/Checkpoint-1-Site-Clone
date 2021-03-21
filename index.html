@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    
     <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Quicksand:wght@300&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap.min (8).css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>SYD | SURF</title>
 </head>
 <body>
@@ -96,7 +98,7 @@
         <!-- SERVICES -->
         <div class="row py-8 justify-content-center bg-dark" id="about">
             <div class="col-md-5 d-flex justify-content-center align-items-center pl order-1">
-                <div class="services__text px-4">
+                <div class="services__text px-4"  data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">
                     <h3 class="services__title">Sydney, Australia's ELITE Surf Club. The only place to experience SYD like a true Aussie.</h3>
                     <small class="services__paragraph text-dark">We are a family of passionate surfers dedicated to teaching beginners and intermediates how to surf faster than they could ever imagine. From our experience, surfing becomes more fun the more you progress.</small>
                 </div>
@@ -120,7 +122,7 @@
             <div class="col-md-9 d-flex flex-column justify-content-center align-items-center pr pl">
                 <div class="about__text d-flex flex-column">
                     <h3 class="about__title"><i class="fas fa-adjust mr-md-4"></i>More than a sport, Sydney Surf is a once in a lifetime experience.</h3>
-                    <p class="about__paragraph">Surfing was brought to Australia in 1915 by Hawaiian Duke Kahanamoku. He demonstrated this ancient Hawaiian board riding technique at Freshwater (or Harbord) in Sydney, New South Wales. Kahanamoku's board is now on display in the northeast end of the SYD Surf club, Sydney, Australia.</p>
+                    <p class="about__paragraph" data-aos="fade-left" data-aos-duration="2500">Surfing was brought to Australia in 1915 by Hawaiian Duke Kahanamoku. He demonstrated this ancient Hawaiian board riding technique at Freshwater (or Harbord) in Sydney, New South Wales. Kahanamoku's board is now on display in the northeast end of the SYD Surf club, Sydney, Australia.</p>
                     <button class="about__button btn btn-primary rounded">Read More</button>
                 </div>
             </div>
@@ -129,7 +131,7 @@
         <!-- TESTIMONIALS -->
         <div class="row py-8 align-items-center bg-dark"  id="testimonials">
             <div class="col-md-4 text-center d-flex align-items-center justify-content-center order-2 order-md-1">
-                <div class="testimonial__card p-3 shadow-light d-flex flex-column justify-content-center rounded">
+                <div class="testimonial__card p-3 shadow-light d-flex flex-column justify-content-center rounded" data-aos="fade-left" data-aos-duration="2500" data-aos-delay="300">
                     <p class="testimonial__paragraph"><i class="fas fa-quote-left mr-2"></i>Getting to experience Australia the way the locals do was great!</p>
                     <small class="testimonial__author">FADI ZAYA | LA</small>
                 </div>
@@ -143,7 +145,7 @@
             </div>
 
             <div class="col-md-4 text-center d-flex align-items-center justify-content-center order-md-3">
-                <div class="testimonial__card p-3 shadow-light d-flex flex-column justify-content-center rounded">
+                <div class="testimonial__card p-3 shadow-light d-flex flex-column justify-content-center rounded" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="300">
                     <p class="testimonial__paragraph"><i class="fas fa-quote-left mr-2"></i>Hands down, the best instructors in NSW! Thanks SYD team!</p>
                     <small class="testimonial__author">DAVID AARON | NYC</small>
                 </div>
@@ -210,5 +212,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
