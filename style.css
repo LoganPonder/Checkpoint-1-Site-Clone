@@ -80,6 +80,10 @@ header {
     background-color: rgba(22, 22, 22, 0.95);
 }
 
+.logo {
+    font-size: 1.4rem;
+}
+
 .hero-video {
     position: absolute;
     top: 0;
@@ -172,13 +176,26 @@ header {
     align-self: flex-end;
 }
 
+#testimonials {
+    background-image: url(./img/trees.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
 .testimonial__card {
     min-height: 15rem;
     max-width: 75%;
     min-width: 30px;
     color: var(--black);
     border-top: .5rem solid black;
+    background-color: var(--white);
+    // background-image: url(./img/t-1.jpg);
+    // background-size: cover;
+    // background-position: center;
+    // background-blend-mode: overlay;
 }
+
 
 .testimonial__card--large {
     min-height: 20rem;
@@ -193,15 +210,11 @@ header {
 }
 
 .testimonial__paragraph {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: thin;
-}
-
-.testimonial__image {
-    height: 20px;
-    width: 20px;
-    background-color: red;
-    border-radius: 50%;
+    text-transform: uppercase;
+    // font-family: 'Quicksand',
+    // sans-serif !important;
 }
 
 .testimonial__author {
@@ -222,6 +235,14 @@ header {
     font-size: 1.6rem;
 }
 
+.testimonial-img {
+    position: absolute;
+    top:0;
+    left:0;
+    background-size: cover;
+    z-index: -1;
+}
+
 .gallery__img {
     width: 100%;
     height: 100%;
@@ -237,6 +258,10 @@ footer {
 
     .text-over-heading {
         display: none;
+    }
+
+    .logo {
+        font-size: 1rem;
     }
 
     .services__icons {
@@ -302,6 +327,10 @@ footer {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
+    // #testimonials {
+    //     background-image: none;
+    // }
 }
 
 @keyframes wave {
